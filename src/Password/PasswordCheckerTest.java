@@ -1,20 +1,22 @@
 package Password;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class PasswordCheckerTest {
 
     PasswordChecker passwordChecker;
 
+    @BeforeEach
     void setUp() {
         passwordChecker = new PasswordChecker();
     }
 
     @Test
     void TestChecklength() {
-        assertTrue(passwordChecker.CheckLength(5, 4));
+        assertTrue(passwordChecker.CheckLength("Slapt", 4));
     }
 
     @Test
@@ -25,7 +27,7 @@ public class PasswordCheckerTest {
 
     @Test
     void TestCheckSymbols() {
-        assertTrue(passwordChecker.CheckSymbols("Slaptazodis"));
+        assertFalse(passwordChecker.CheckSymbols("Slaptazodis"));
 
     }
 

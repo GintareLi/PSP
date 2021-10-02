@@ -1,13 +1,15 @@
 package email;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class EmailValidatorTest {
 
     EmailValidator emailValidator;
 
+    @BeforeEach
     void setUp() {
         emailValidator = new EmailValidator();
     }
