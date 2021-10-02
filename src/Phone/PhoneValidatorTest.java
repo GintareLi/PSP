@@ -1,15 +1,15 @@
 package Phone;
 
-import email.EmailValidator;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static groovy.test.GroovyTestCase.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class PhoneValidatorTest {
 
     PhoneValidator phoneValidator;
 
+    @BeforeEach
     void setUp() {
         phoneValidator = new PhoneValidator();
     }
