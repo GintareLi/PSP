@@ -1,3 +1,3 @@
 Gintarė Lideikaitė 2gr
-
-porininko kode pavadinimai buvo nekorektiški.
+Gauti unit testai aiškūs
+pridėjau papildomą testą, kuris patikrina ar atsiųsti duomenys nėra lygūs null
